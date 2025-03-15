@@ -1,0 +1,76 @@
+/* Universal reset */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e2f, #121213); /* Sleek gradient background */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.player {
+  margin: 50px auto;
+  padding: 20px;
+  width: 320px; /* Slightly increased for better balance */
+  border: 3px solid #4caf50;
+  border-radius: 20px;
+  background: #1f1f2e;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player:hover {
+  transform: scale(1.08); /* Slight hover effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 26px;
+  color: #4caf50;
+  margin-bottom: 25px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); /* Adds depth to the title */
+}
+
+/* Controls styling */
+.controls button {
+  padding: 14px 30px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.controls button:hover {
+  background: linear-gradient(135deg, #66bb6a, #388e3c); /* Brighter color on hover */
+  transform: translateY(-4px); /* Floating effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.controls button:active {
+  transform: translateY(2px); /* Button press feedback */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add animation for smoother transitions */
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 5px #4caf50;
+  }
+  50% {
+      box-shadow: 0 0 15px #66bb6a;
+  }
+  100% {
+      box-shadow: 0 0 5px #4caf50;
+  }
+}
+
+/* Glow effect on hover */
+.player:hover {
+  animation: glow 1.5s infinite alternate;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>My<span>Portfolio</span></h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </nav>
+
+        <div class="main">
+            <div class="mainText">
+                <h3 class="fade-in">Hello I am</h3>
+                <h1 class="slide-in">Saniya <span>Jamal</span></h1>
+                <p class="fade-in">Fronted Web Developer</p>
+                <button id="cvBtn" class="btn-hover">Resume</button>
+
+                <script>
+                    document.getElementById("cvBtn").addEventListener("click", function () {
+                        window.open("resume.docx", "_blank");
+                    });
+                </script>
+            </div>
+            <div class="image-container">
+                <img src="pic.jpg" alt="Developer Image" class="image-fade">
+            </div>
+        </div>
+
+        <div class="aboutus" id="about">
+            <div class="head">
+                <h1>About <span>Us</span></h1>
+            </div>
+            <div class="about">
+                <img src="pic.jpg" alt="">
+                <div class="aboutText">
+                    <h2>Hello I am Fronted Web <span>Developer</span></h2>
+                    <p>Speciality :<span>Website Development</span> </p>
+                    <p>Skills :<span>Fronted Web Design</span> </p>
+                    <p>YouTuber :<span>Making Programming Videos</span> </p>
+                    <p>Email :<span>Sandhyakumarimuza7@gmail.com</span> </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="services" id="service">
+            <div class="head">
+                <h1>Our <span>Services</span></h1>
+            </div>
+            <div class="service">
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Website Development</h3>
+                    <p>Web development is the process of building and maintaining websites and web applications. It
+                        involves various technologies, programming languages, and frameworks to create functional,
+                        visually appealing, and user-friendly web experiences.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Graphic design is the art of creating visual content to communicate messages effectively. It
+                        involves combining typography, imagery, colors, and layout to produce visually appealing and
+                        functional designs for both digital and print media.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Website Design</h3>
+                    <p>Website design focuses on creating visually appealing, user-friendly, and functional websites. It
+                        involves aesthetics, usability, and accessibility to enhance the user experience (UX) while
+                        maintaining brand consistency.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="works" id="work">
+            <div class="head">
+                <h1>My <span>Works</span></h1>
+            </div>
+            <div class="myWork">
+                <div class="workCard">
+                    <img src="Ai.png" alt="">
+                    <p>Virtual Assistant Website</p>
+                    <a href="https://mitsaniya.github.io/Virtual-AI-project/" target="_blank">checkout</a>
+                </div>
+                <div class="workCard">
+                    <img src="bulb.png" alt="">
+                    <p>AI chatbot</p>
+                    <a href="https://mitsaniya.github.io/bulb-/" target="_blank">checkout</a>
+                </div>
+                <div class="workCard">
+                    <img src="shopping.png" alt="">
+                    <p>Movie Search Website</p>
+                    <a href="https://mitsaniya.github.io/e-commerce-project/" target="_blank">checkout</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="head">
+                <form id="contact-form">
+                    <h2>Contact Us</h2>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                    <p id="status"></p>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text">
+                <h3>Connect Here</h3>
+                <p>YouTube</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p>Facebook</p>
+
+            </div>
+            <div class="text">
+                <h3>My Work</h3>
+                <p>quality</p>
+                <p>Good</p>
+                <p>Best price</p>
+                <p>Best</p>
+
+            </div>
+            <div class="text">
+                <h3>Effort</h3>
+                <p>Quality</p>
+                <p>Affordable</p>
+                <p>Good</p>
+                <p>Best Price</p>
+
+            </div>
+            <div class="text">
+                <h3>Contact</h3>
+                <p>Email</p>
+                <p>Message</p>
+                <p>Phone</p>
+                <p>Github</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

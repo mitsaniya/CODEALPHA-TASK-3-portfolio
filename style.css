@@ -1,0 +1,367 @@
+* {
+    margin: 0%;
+    padding: 0%;
+ }
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17, 16, 16);
+    color: white;
+ }
+ nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 22px;
+   background-color: rgb(17, 16, 16);
+   position: fixed;
+   top: 0%;
+   width: 100%;
+ }
+
+ ul{
+   display: flex;
+   align-items: center;
+ }
+ ul li{
+   list-style: none;
+ }
+ ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 19px;
+   margin-inline: 22px;
+ }
+ ul li a:hover{
+   color: rgba(255, 34, 0, 0.533);
+   border-bottom: 2px solid rgba(255, 17, 0, 0.619);
+ }
+ #bar{
+   display: none;
+ }
+ .logo{
+   font-size: 22px;
+ }
+ .logo span{
+   color: rgba(255, 17, 0, 0.679)+;
+ }
+ .main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 105px;
+ }
+ .mainText h1{
+   font-size: 70px;
+ }
+ .mainText h1 span{
+   color: rgba(255, 17, 0, 0.679);
+ }
+ .mainText h3{
+   font-size: 28px;
+ }
+ .mainText p{
+   font-size: 30px;
+ }
+ .mainText button{
+   width: 140px;
+   height: 40px;
+   background-color: rgba(255, 17, 0, 0.679);
+   font-size: 19px;
+   border: none;
+   margin-top: 24px;
+   color: white;
+ }
+ button:hover{
+   border: 2px solid rgba(255, 17, 0, 0.679);
+   background-color: transparent;
+   cursor: pointer;
+ }
+ .head{
+   text-align: center;
+   padding: 80px;
+ }
+ .head span{
+   color: rgba(255, 17, 0, 0.679);
+ }
+ .about{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(28, 28, 28);
+   padding: 52px;
+ }
+ .about img{
+   width: 250px;
+   border-radius: 50%;
+   border: 4px solid rgba(255, 17, 0, 0.679);
+   margin-inline: 65px;
+ }
+ .aboutText p{
+   margin-top: 22px;
+ }
+ .aboutText h2 span{
+   color: rgba(255, 17, 0, 0.679);
+ }
+ .aboutText p span{
+   color: rgb(218, 218, 218);
+ }
+ .aboutText h2{
+   font-size: 30px;
+ }
+ .service{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+ }
+ .card{
+   width: 250px;
+   padding: 22px;
+   background-color: rgb(34, 34, 34);
+   margin-inline: 20px;
+   border-radius: 5px;
+   margin-top: 22px;
+ }
+ .card p{
+   margin-top: 11px;
+ }
+ .card i{
+   font-size: 26px;
+ }
+ .myWork{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .workCard{
+   width: 300px;
+   height: 310px;
+   background-color: #232323;
+   border-radius: 5px;
+   margin-inline: 20px;
+   padding: 11px;
+   margin-top: 22px;
+ }
+ .workCard img{
+   width: 100%;
+   height: 200px;
+ }
+ .workCard p{
+   margin-top: 11px;
+ }
+ .workCard a{
+   text-decoration: none;
+   position: absolute;
+   margin-top: 20px;
+   padding: 6px 12px;
+   background-color: rgba(255, 17, 0, 0.679);
+   color: white;
+ }
+
+ .footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 55px;
+   margin-top: 66px;
+   background-color: rgb(52, 51, 51);
+ }
+ .text{
+   margin-top: 20px;
+ }
+ .text p{
+   margin-top: 12px;
+ }
+
+ @media screen and (max-width:1000px){
+   .main{
+      display: block;
+      text-align: center;
+      margin-top: 155px;
+   }
+ }
+
+ @media screen and (max-width:800px){
+   ul{
+      display: none;
+   }
+   .showData{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 23px;
+      background-color: rgb(60, 59, 59);
+      gap: 20px;
+      border-radius: 5px;
+      position: fixed;
+      top: 75px;
+      right: 3%;
+   }
+   #bar{
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+   }
+ }
+ @media screen and (max-width:550px){
+   .mainText h1{
+      font-size: 36px;
+   }
+   .mainText h3{
+      font-size: 21px;
+   }
+   .mainText p{
+      font-size: 20px;
+   }
+   .main img{
+      width: 90%;
+   }
+   .contact{
+      width: 80%;
+   }
+ }
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.mainText {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 300px;
+    animation: image-fade 2s ease-in-out;
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes image-fade {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fade-in {
+    animation: fade-in 2s ease-in-out;
+}
+
+.slide-in {
+    animation: slide-in 1.5s ease-out;
+}
+
+.btn-hover {
+    transition: 0.3s;
+}
+
+.btn-hover:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: rgba(255, 17, 0, 0.679);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(255, 17, 0, 0.686);
+}
+/* Basic form styling */
+#contact-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box; /* Prevents overflow */
+  overflow: hidden; /* Hides any extra content */
+}
+
+/* Form heading */
+#contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  word-wrap: break-word; /* Ensures long words break properly */
+}
+
+/* Input fields */
+#contact-form input, 
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+  overflow: hidden; /* Hides any overflowing text */
+  word-wrap: break-word; /* Breaks text properly */
+}
+
+/* Textarea styling */
+#contact-form textarea {
+  height: 120px;
+  resize: none;
+  overflow-y: auto; /* Enables scrolling if text overflows */
+}
+
+/* Button styling */
+#contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 17, 0, 0.679);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#contact-form button:hover {
+  background: rgba(255, 17, 0, 0.679);
+}
+
+/* Status message */
+#status {
+  margin-top: 10px;
+}
